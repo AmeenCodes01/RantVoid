@@ -177,7 +177,7 @@ function App() {
         fontSize: "13px",
         letterSpacing:"1px"
       }}>The gibberish above is slowly replaced by your rant, hidden in there. rant away to your hearts content. One day, this will all turn into your words. it's okay to hate yourself, but always try to love yourself.
-      tap the flower for every time it helps <CiHeart />
+     please tap the flower for every time it helps <CiHeart />
       </p>
     </div>
   );
