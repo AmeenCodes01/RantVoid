@@ -176,8 +176,8 @@ function App() {
         fontStyle:"italic",
         fontSize: "13px",
         letterSpacing:"1px"
-      }}>The gibberish above is slowly replaced by your rant, hidden in there. rant away to your hearts content. One day, this will all turn into your words. it's okay to hate yourself, but always try to love yourself.
-     please tap the flower for every time it helps <CiHeart />
+      }}>The gibberish above is slowly replaced by your rant, hidden in there. rant away to your hearts content. One day, this will all turn into your words. You may hate yourself now, but please try to love yourself.
+      tap the flower for every time you've helped yourself <CiHeart />
      (all of this is private, yours)
       </p>
     </div>
