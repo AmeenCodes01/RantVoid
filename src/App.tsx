@@ -39,8 +39,10 @@ function App() {
   //  const [animation, setAnimation] = useState(false);
   const [animatedText, setAnimatedText] = useState("");
   const [animationStyle, setAnimationStyle] = useState({});
-  const [helped,setHelped] = useState(localStorage.getItem(`helped`) === null ? 0 : parseInt(localStorage.getItem("helped")))
-  const [liked,setLiked] = useState(false)
+  const [helped, setHelped] = useState<number>(() => {
+    const storedValue = localStorage.getItem('helped');
+    return storedValue === null ? 0 : parseInt(storedValue, 10);
+  });  const [liked,setLiked] = useState(false)
   const handleSpace = (e: any) => {
     if (e.key === "." || words.split(" ").length >= 9 || e.key === "Enter") {
       let newRant = rant + " " + e.target.value;
@@ -69,6 +71,8 @@ function App() {
           //  transitionDelay:"4s"
         });
       }, 100);
+
+      
       setWords("");
       // Reset
       setTimeout(() => {
